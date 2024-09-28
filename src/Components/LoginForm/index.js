@@ -4,12 +4,12 @@ import './index.css'
 function LoginForm() {
     const [userName,setUserName]  = useState('')
     const [address,setAddress] = useState('')
-    const [msg,setMsg] = useState('praveen')
+    const [msg,setMsg] = useState('')
 
     const onSubmit = async (event)=>{
         event.preventDefault();
         console.log(userName,address)
-        const url = `http://localhost:3000/login`
+        const url = `https://smoketreesbackend.onrender.com/login`
         const option = {
             method:'POST',
             headers:{
